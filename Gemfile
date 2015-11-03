@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -11,7 +12,9 @@ end
 group :production do
   gem 'pg'
 end
-
+#Type of web server
+gem 'puma'
+gem 'rails_12factor'
 #Use New Relic for APM monitoring
 gem 'newrelic_rpm'
 # Use SCSS for stylesheets
